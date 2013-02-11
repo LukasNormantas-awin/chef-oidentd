@@ -1,0 +1,13 @@
+# Configuration for oidentd
+# see oidentd.conf(5)
+#
+# Managed by Chef for <%= node["fqdn"] %>.
+# Local changes will be overwritten.
+
+default {
+        default {
+          <% %w(spoof spoof_all spoof_privport random random_numeric numeric hide).each do |key| -%>
+          <%= node["oidentd"]["key"] %> <%= key %>
+          <% end -%>
+        }
+}

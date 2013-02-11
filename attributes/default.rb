@@ -1,0 +1,7 @@
+default["oidentd"]["spoof"] = "deny"
+default["oidentd"]["spoof_all"] = "deny"
+default["oidentd"]["spoof_privport"] = "deny"
+default["oidentd"]["random"] = "allow"
+default["oidentd"]["random_numeric"] = "allow"
+default["oidentd"]["numeric"] = "allow"
+default["oidentd"]["hide"] = "deny"
