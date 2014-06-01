@@ -7,7 +7,7 @@
 default {
         default {
           <% %w(spoof spoof_all spoof_privport random random_numeric numeric hide).each do |key| -%>
-          <%= node["oidentd"]["key"] %> <%= key %>
+          <%= node["oidentd"][key] %> <%= key %>
           <% end -%>
         }
 }
