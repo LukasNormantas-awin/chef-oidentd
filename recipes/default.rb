@@ -17,6 +17,10 @@
 # limitations under the License.
 #
 
+if platform_family?('rhel')
+  include_recipe 'yum-epel'
+end
+
 # Install oidentd.
 package "oidentd" do
   action :install
